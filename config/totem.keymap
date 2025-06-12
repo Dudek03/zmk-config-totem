@@ -36,7 +36,7 @@
         combo_esc {
             timeout-ms = <60>;
             key-positions = <0 1>;
-            bindings = <&kp TAB>;
+            bindings = <&kp ESCAPE>;
             require-prior-idle-ms = <120>;
         };
 
@@ -196,7 +196,7 @@
             bindings = <
            &kp GRAVE         &kp UNDER       &kp UP          &kp PLUS         &kp LBRC    &kp RBRC    &kp N7        &kp N8        &kp N9        &kp EQUAL
            &kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LBKT    &kp RBKT    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&kp TILDE  &kp LEFT_CONTROL  &kp PG_UP       &kp LG(DOWN)    &kp PG_DN        &kp LPAR    &kp RPAR    &kp NUMBER_1  &kp N2        &kp N3        &kp KP_MULTIPLY  &trans
+&kp TILDE  &kp LEFT_CONTROL  &kp PG_UP       &kp LEFT_GUI    &kp PG_DN        &kp LPAR    &kp RPAR    &kp NUMBER_1  &kp N2        &kp N3        &kp KP_MULTIPLY  &trans
                                              &trans          &trans           &trans      &kp PERIOD  &kp N0        &kp KP_COMMA
             >;
         };
@@ -247,7 +247,7 @@
 
             bindings = <
         &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+        &bootloader  &bt BT_NXT  &to 4         &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                  &trans        &trans  &trans    &trans  &trans  &trans
             >;
@@ -256,12 +256,12 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        navigation {
+        gaming {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &kp UP_ARROW  &kp RIGHT
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &kp DOWN      &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT  &trans        &trans     &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+         &trans            &kp Q   &trans  &kp E   &kp R        &trans  &trans  &trans  &trans  &trans
+         &kp LEFT_SHIFT    &kp A   &kp W   &kp D   &kp F        &trans  &trans  &trans  &trans  &trans
+&kp TAB  &kp LEFT_CONTROL  &trans  &kp S   &trans  &kp B        &trans  &trans  &trans  &trans  &trans  &to 0
+                                   &trans  &trans  &kp SPACE    &trans  &trans  &trans
             >;
         };
     };
